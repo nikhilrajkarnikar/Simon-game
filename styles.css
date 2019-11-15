@@ -32,7 +32,7 @@ body {
 }
 
 .red {
-  background-color: orange;
+  background-color: red;
 }
 
 .green {
@@ -49,6 +49,6 @@ body {
 
 .pressed {
   box-shadow: 0 0 20px white;
-  background-color: black;
+  background-color: grey;
 }
 

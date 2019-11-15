@@ -9,7 +9,7 @@ $(".btn").on("click", function(){
     userClickedPattern.push(userChosenColour);
     console.log(userClickedPattern);
     playSound(userChosenColour);
-    $("#" + userChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+    animatePress(userChosenColour);
 });
 
 function playSound(name){
@@ -33,6 +33,13 @@ $(document).keydown(function (e) {
     nextSequence();
 });
 
+
+function animatePress(currentColour){
+    $("#" + currentColour).addClass("pressed");
+   setTimeout(function(){
+    $("#"+currentColour).removeClass("pressed");
+   },100);
+}
 
 
 
